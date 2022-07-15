@@ -33,5 +33,7 @@ class Command(object):
         for i in self.pftcl:
             wstr += i
             wstr += ")"
+        self.pftc.seek(0)
+        self.pftc.truncate()
         self.pftc.write(wstr)
         return 0
