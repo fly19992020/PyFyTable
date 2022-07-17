@@ -15,7 +15,7 @@ class Command(object):
                 break
             n += 1
         if f == False:
-            self.pftcl[len(self.pftcl) + 1] = xy + ":" + c
+            self.pftcl.append(xy + ":" + c)
         return 0
         
     def read(self, xy):
