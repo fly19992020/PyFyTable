@@ -2,6 +2,6 @@
 A table software implemented in Python.
 ## About
 ### Version:
-pre 2
+pre 3
 ### Core Version:
 v0.0.1
