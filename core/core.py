@@ -37,3 +37,6 @@ class Command(object):
         self.pftc.truncate()
         self.pftc.write(wstr)
         return 0
+
+    def close(self):
+        self.pftc.close()
