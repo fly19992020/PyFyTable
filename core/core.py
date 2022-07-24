@@ -1,9 +1,8 @@
 class Command(object):
-    def open(self, road):
-        self.pftc = open(road, mode="r+")
-        self.pftcl = self.pftc.read().split(")")
-        return 0
-    
+    def __init__(self, path):
+        self.pftc = open(path, mode="r+", encoding="utf-8")
+        self.pftcl = self.pftc.split(")")
+
     def write(self, xy, c):
         f = False
         n = 0
@@ -17,7 +16,7 @@ class Command(object):
         if f == False:
             self.pftcl.append(xy + ":" + c)
         return 0
-        
+
     def read(self, xy):
         r = -1
         f = False
@@ -27,7 +26,7 @@ class Command(object):
                 r = th[1]
                 break
         return r
-    
+
     def save(self):
         wstr = ""
         for i in self.pftcl:
