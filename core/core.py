@@ -1,7 +1,7 @@
 class Command(object):
     def __init__(self, path):
         self.pftc = open(path, mode="r+", encoding="utf-8")
-        self.pftcl = self.pftc.split(")")
+        self.pftcl = self.pftc.read().split(")")
 
     def write(self, xy, c):
         f = False
@@ -39,3 +39,4 @@ class Command(object):
 
     def close(self):
         self.pftc.close()
+        return 0
