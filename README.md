@@ -29,6 +29,6 @@ python3 ./luffy/Main.py
 ---
 ## About
 ### Version:
-v1.0.0
+v1.0.1
 ### Core Version:
-v1.0.0
+v1.0.1
