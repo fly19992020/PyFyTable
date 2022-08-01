@@ -5,14 +5,19 @@ print("Welcome to PyFyTable")
 
 def ln(c):
     c = list(c)
+    f = False
     while True:
         if c[-1].isdigit():
+            f = True
             c.pop(-1)
         else:
             break
     r = False
-    c = "".join(c)
-    r = c.isalpha()
+    if f:
+        c = "".join(c)
+        r = c.isalpha()
+    else:
+        r = False
     return r
 
 
@@ -23,7 +28,7 @@ while True:
         try:
             command = core.Command(p)
         except:
-            print('Error:File"' + p + '"is not found.Code 10')
+            print("Error:File\'{path}\"is not found.Code 10".format(path=p))
 
     elif n == "WRITE":  #write
         i = input(">>").split(",")

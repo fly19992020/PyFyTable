@@ -1,6 +1,9 @@
 # PyFyTable
 A table software implemented in Python.
 
+![alt icon](https://shields.io/github/license/fly19992020/PyFyTable.svg)
+![alt icon](https://shields.io/github/repo-size/fly19992020/PyFyTable)
+
 ---
 ## Help
 First open Main.py:
