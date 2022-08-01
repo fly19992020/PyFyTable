@@ -63,8 +63,6 @@ while True:
     elif n == "EXIT":  #exit
         try:
             command.close()
-        except AttributeError:
-            pass
         finally:
             exit()
 
@@ -72,7 +70,7 @@ while True:
         command.save()
 
     elif n == "":
-        pass
+        continue
 
     else:
         print('Error:\"{input}\" is not found.Code 30'.format(input=n))
