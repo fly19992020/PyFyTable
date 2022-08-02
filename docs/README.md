@@ -1,6 +1,10 @@
 # PyFyTable
 A table software implemented in Python.
 
+![alt icon](https://shields.io/github/license/fly19992020/PyFyTable.svg)
+![alt icon](https://shields.io/github/repo-size/fly19992020/PyFyTable)
+![alt icon](https://shields.io/github/v/release/fly19992020/PyFyTable?display_name=tag&include_prereleases)
+
 ---
 ## Help
 First open Main.py:
@@ -29,6 +33,6 @@ python3 ./luffy/Main.py
 ---
 ## About
 ### Version:
-v1.0.2
+v1.0.4
 ### Core Version:
-v1.0.1
+v1.0.2
