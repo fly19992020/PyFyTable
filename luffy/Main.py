@@ -23,21 +23,21 @@ def ln(c):
 
 while True:
     n = input("PFT[")
-    if n == "OPEN":  #open
+    if n == "OPEN":  # open
         p = input(">>")
         try:
             command = core.Command(p)
-        except:
+        except FileNotFoundError:
             print("Error:File\'{path}\"is not found.Code 10".format(path=p))
 
-    elif n == "WRITE":  #write
+    elif n == "WRITE":  # write
         i = input(">>").split(",")
-        f = 1  #flag
+        f = 1  # flag
         try:
-            l = ln(i[0])
+            sn = ln(i[0])
         except IndexError:
             f = 0
-        if f == 1 and l:
+        if f == 1 and sn:
             print(command.write(i[0], i[1]))
         else:
             print(
@@ -45,14 +45,14 @@ while True:
                 "like a correct coordinate. Code 31"
             )
 
-    elif n == "READ":  #read
+    elif n == "READ":  # read
         i = input(">>")
-        f = 1  #flag
+        f = 1  # flag
         try:
-            l = ln(i)
+            sn = ln(i)
         except IndexError:
             f = 0
-        if f == 1 and l:
+        if f == 1 and sn:
             print(command.read(i))
         else:
             print(
@@ -60,13 +60,13 @@ while True:
                 "like a correct coordinate. Code 31"
             )
 
-    elif n == "EXIT":  #exit
+    elif n == "EXIT":  # exit
         try:
             command.close()
         finally:
             exit()
 
-    elif n == "SAVE":  #save
+    elif n == "SAVE":  # save
         command.save()
 
     elif n == "":
