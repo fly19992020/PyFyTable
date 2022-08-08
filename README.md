@@ -31,8 +31,8 @@ python3 ./luffy/Main.py
 ```
 
 ---
-## About!
+## About
 ### Version:
-v1.1.0
+v1.1.1
 ### Core Version:
 v1.0.2
