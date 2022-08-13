@@ -11,6 +11,7 @@ while True:
         print("SAVE")
         print("EXIT")
     elif n == "":
-        pass
+        continue
     else:
         print("Please re-enter it")
+        continue

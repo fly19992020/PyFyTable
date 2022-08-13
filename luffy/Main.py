@@ -45,6 +45,8 @@ while True:
                     command.pftcl.pop(i)
                 elif len(sp) == 0:
                     command.pftcl.pop(i)
+        else:
+            print("Warning: This file failed to open. Code 12.")
 
     elif n == "WRITE":  # write
         if ho:
