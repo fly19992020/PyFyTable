@@ -30,8 +30,8 @@ class Command(object):
     def save(self):
         wstr = ""
         for i in self.pftcl:
-            wstr += i
             wstr += ")"
+            wstr += i
         self.pftc.seek(0)
         self.pftc.truncate()
         self.pftc.write(wstr)

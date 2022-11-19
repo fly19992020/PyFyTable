@@ -38,6 +38,7 @@ while True:
         if not he:
             ho = True  # has open
         if ho:
+            print(command.pftcl)
             for i in range(len(command.pftcl)):
                 sp = command.pftcl[i].split(":")
                 if len(sp) != 2 and len(sp) != 0:
