@@ -38,13 +38,10 @@ while True:
         if not he:
             ho = True  # has open
         if ho:
-            print(command.pftcl)
             for i in range(len(command.pftcl)):
                 sp = command.pftcl[i].split(":")
-                if len(sp) != 2 and len(sp) != 0:
+                if len(sp) != 2 and len(sp) != 1:
                     print("Warning: There is an unrecognized item.Code 11")
-                    command.pftcl.pop(i)
-                elif len(sp) == 0:
                     command.pftcl.pop(i)
         else:
             print("Warning: This file failed to open. Code 12.")

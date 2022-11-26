@@ -33,6 +33,6 @@ python3 ./luffy/Main.py
 ---
 ## About
 ### Version:
-v1.1.3
+v1.1.4
 ### Core Version:
 v1.0.2
