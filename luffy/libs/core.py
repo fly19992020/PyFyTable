@@ -13,13 +13,12 @@ class Command(object):
                 f = True
                 break
             n += 1
-        if f == False:
+        if not f:
             self.pftcl.append(xy + ":" + c)
         return 0
 
     def read(self, xy):
         r = -1
-        f = False
         for i in self.pftcl:
             th = i.split(":")
             if th[0] == xy:

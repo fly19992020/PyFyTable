@@ -5,3 +5,9 @@
 /venv/
 /.idea/
 /luffy/test.pftb
+luffy/libs/__pycache__/__init__.cpython-311.pyc
+luffy/libs/__pycache__/core.cpython-311.pyc
+luffy/libs/__pycache__/usecore.cpython-311.pyc
+luffy/libs/__pycache__/__init__.cpython-310.pyc
+luffy/libs/__pycache__/core.cpython-310.pyc
+luffy/libs/__pycache__/usecore.cpython-310.pyc
