@@ -15,7 +15,7 @@ def command(c:str):
 while True:
     n = input("HELP? ")
     if n == "ABOUT":
-        print("version:v1.1.3")
+        print("version:v2.0.0")
         print("GPT license")
     elif n == "ALL_COMMAND":
         print("OPEN")
