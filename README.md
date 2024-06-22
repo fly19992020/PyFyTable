@@ -5,7 +5,7 @@ This program is free software: you can redistribute it and/or modify it under th
 
 You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
 
-Copyright 2022-2023 fly19992020
+Copyright 2022-2024 fly19992020
 
 ![alt icon](https://shields.io/github/license/fly19992020/PyFyTable.svg)
 ![alt icon](https://shields.io/github/repo-size/fly19992020/PyFyTable)
@@ -20,8 +20,9 @@ python3 ./luffy/Main.py
 ### Write
 ```
 [ WRITE
->> rc,what you want to write
+>> rc,(what you want to write)
 ```
+No spaces!
 ### READ
 ```
 [ READ
