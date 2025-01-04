@@ -26,7 +26,7 @@ def ln(c):
     return r
 
 
-def pftopen():
+def pft_open():
     global command
     global ho
     p = input(">> ")
@@ -80,7 +80,7 @@ def read():
         print("Error:You have not opened a file. Code 20.")
 
 
-def pftexit():
+def pft_exit():
     if ho:
         global command
         command.close()
@@ -95,4 +95,4 @@ def save():
         print("Error:You have not opened a file. Code 20.")
 
 
-dire = {"OPEN": pftopen, "WRITE": write, "READ": read, "EXIT": pftexit, "SAVE": save}
+dire = {"OPEN": pft_open, "WRITE": write, "READ": read, "EXIT": pft_exit, "SAVE": save}

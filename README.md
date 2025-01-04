@@ -5,7 +5,7 @@ This program is free software: you can redistribute it and/or modify it under th
 
 You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
 
-Copyright 2022-2024 fly19992020
+Copyright 2022-2025 fly19992020
 
 ![alt icon](https://shields.io/github/license/fly19992020/PyFyTable.svg)
 ![alt icon](https://shields.io/github/repo-size/fly19992020/PyFyTable)
@@ -36,6 +36,14 @@ No spaces!
 ```
 [ EXIT
 ```
+
+### Developing
+First, you need to create a Python file. The File must have a dictionary called `dict`
+with the key of the name of commands and a content of the function. 
+
+Then, copy the file to the dict libs.
+
+Finally, add the loading script to the load.py
 
 ---
 ## About
