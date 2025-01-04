@@ -14,7 +14,11 @@ import importlib
 f = open("libs.txt", mode="r", encoding="utf-8")
 libs = f.read().split("\n")
 for i in libs:
-    lib = importlib.import_module("libs." + i)
+    try:
+        lib = importlib.import_module("libs." + i)
+    except ModuleNotFoundError:
+        print("Error: The module \"{module}\" is not found.".format(module=i))
+        exit(1)
     try:
         funcs = lib.dire
         mainDir.update(funcs)
