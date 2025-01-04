@@ -1,7 +1,5 @@
-from libs import core  # This line of code cannot be run alone.
-# import core
-# If you want to run it separately, use this line of code.
-
+import importlib
+core = importlib.import_module("luffy.core")
 ho = False
 
 

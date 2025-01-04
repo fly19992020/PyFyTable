@@ -1,7 +1,7 @@
 class Command(object):
     def __init__(self, path):
-        self.pftc = open(path, mode="r+", encoding="utf-8")
-        self.pftcl = self.pftc.read().split(")")
+        self.pftc = open(path, mode="r+", encoding="utf-8")  # pftc: path file to command
+        self.pftcl = self.pftc.read().split(")")  # pftcl: the content of the table as a list
 
     def write(self, xy, c):
         f = False
@@ -27,7 +27,7 @@ class Command(object):
         return r
 
     def save(self):
-        wstr = ""
+        wstr = ""  # write string
         for i in self.pftcl:
             wstr += ")"
             wstr += i
