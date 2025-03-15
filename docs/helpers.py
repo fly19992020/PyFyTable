@@ -1,5 +1,5 @@
 print("Welcome to helper.py")
-def command(c:str):
+def command(c:str): # Help of the commands.
     help = {
         "READ":"] rc",
         "WRITE":"] rc,what you want to write",
