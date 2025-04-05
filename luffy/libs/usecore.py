@@ -1,7 +1,8 @@
-import importlib
-import luffy.Main as Main
-core = importlib.import_module("luffy.core")
-ho = False # has open a file.
+from libs import core  # This line of code cannot be run alone.
+# import core
+# If you want to run it separately, use this line of code.
+
+ho = False
 
 
 def ln(c):
@@ -25,13 +26,13 @@ def ln(c):
     return r
 
 
-def pft_open(command):
+def pft_open():
+    global command
     global ho
     p = input(">> ")
     he = False  # has error
     try:
-        Main.set_command(core.Command(p))
-        command = core.Command(p) # create the command object.
+        command = core.Command(p)
     except FileNotFoundError:
         print("Error:File\'{path}\"is not found.Code 10".format(path=p))
         he = True
@@ -47,8 +48,9 @@ def pft_open(command):
         print("Warning:This file failed to open. Code 12.")
 
 
-def write(command):
+def write():
     if ho:
+        global command
         i = input(">> ").split(",")
         sn = ln(i[0])  # user's input is true
         if sn:
@@ -62,8 +64,9 @@ def write(command):
         print("Error:You have not opened a file. Code 20.")
 
 
-def read(command):
+def read():
     if ho:
+        global command
         i = input(">> ")
         sn = ln(i)  # user's input is true
         if sn:
@@ -77,14 +80,16 @@ def read(command):
         print("Error:You have not opened a file. Code 20.")
 
 
-def pft_exit(command):
+def pft_exit():
     if ho:
+        global command
         command.close()
     exit()
 
 
-def save(command):
+def save():
     if ho:
+        global command
         command.save()
     else:
         print("Error:You have not opened a file. Code 20.")

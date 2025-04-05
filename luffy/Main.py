@@ -8,25 +8,10 @@
 
 import load
 
-# used to load the libs
-mainDir = {}
-import importlib
-f = open("libs.txt", mode="r", encoding="utf-8")
-libs = f.read().split("\n")
-for i in libs:
-    lib = importlib.import_module("libs." + i)
-    try:
-        funcs = lib.dire
-        mainDir.update(funcs)
-    except AttributeError:
-        print("Error: The module \"{module}\" does not have a dire attribute.".format(module=i))
-        exit(1)
-
-
 print("Welcome to PyFyTable")
 ho = False
 
-mainDir.update(load.mainDir)
+mainDir = load.mainDir
 
 while True:
     n = input("PFT[ ")
