@@ -1,6 +1,4 @@
-from libs import core  # This line of code cannot be run alone.
-# import core
-# If you want to run it separately, use this line of code.
+import luffy.libs.core as core
 
 ho = False
 
